@@ -17,6 +17,7 @@ echo "-> root: /$root"
 
 docker run \
  --name=duplicati \
+ -d
  -e PUID=0 \
  -e PGID=0 \
  -e TZ=Asia/Shanghai \
