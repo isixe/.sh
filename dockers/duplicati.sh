@@ -9,6 +9,7 @@ fi
 
 # volume path prapare
 mkdir -p $volumePath
+cd $volumePath
 root=$(echo $volumePath | awk -F '/' '{print $2}')
 
 docker run \
