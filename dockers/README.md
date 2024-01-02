@@ -19,6 +19,6 @@
 	</tr>
 	<tr>
 		<td>duplicati</td>
-		<td>curl -s https://raw.githubusercontent.com/isixe/.sh/main/dockers/duplicati.sh | bash</td>
+		<td>wget -P /root -N --no-check-certificate "https://raw.githubusercontent.com/isixe/.sh/main/dockers/duplicati.sh" && chmod 700 /root/duplicati.sh && /root/duplicati.sh && rm /root/duplicati.sh</td>
 	</tr>
 </table>
