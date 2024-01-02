@@ -1,13 +1,13 @@
 #!/bin/bash
 
 # set volume path
-read -p "Set docker volume path (default /data/docker)：" -i "/data/docker" volumePath
-volumePath="${volumePath:-/data/docker}"
+read -p "Set docker volume path (default /data/docker/duplicati)：" volumePath
+volumePath="${volumePath:-/data/docker/duplicati}"
 echo "-> volume: $volumePath"
 
 # volume path prapare
-mkdir -p $volumePath/duplicati
-cd $volumePath/duplicati
+mkdir -p $volumePath
+cd $volumePath
 root=$(echo $volumePath | awk -F '/' '{print $2}')
 echo "-> root: /$root"
 
