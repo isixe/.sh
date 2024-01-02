@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # set volume path
-read -p "Set docker volume path (default /data/docker)：" volumePath
+read -p "Set docker volume path (default /data/docker)：" -i "/data/docker" volumePath
 volumePath="${volumePath:-/data/docker}"
 echo "-> volume: $volumePath"
 
