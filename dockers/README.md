@@ -1,9 +1,24 @@
 ### Docker Installation
-| linux release  | installation |
-| :---- | :---- |
-| debian  |  curl -s https://raw.githubusercontent.com/isixe/.sh/main/dockers/debian.sh | bash |
+<table>
+	<tr>
+		<th>linux release </th>
+		<th>installation</th>
+	</tr>
+	<tr>
+		<td>debian</td>
+		<td>curl -s https://raw.githubusercontent.com/isixe/.sh/main/dockers/debian.sh | bash</td>
+	</tr>
+</table>
+
 
 ### docker backup
-| docker run |  installation |
-| :---- | :---- |
-| duplicati | curl -s https://raw.githubusercontent.com/isixe/.sh/main/dockers/duplicati.sh | bash |
+<table>
+	<tr>
+		<th>docker run</th>
+		<th>installation</th>
+	</tr>
+	<tr>
+		<td>duplicati</td>
+		<td>curl -s https://raw.githubusercontent.com/isixe/.sh/main/dockers/duplicati.sh | bash</td>
+	</tr>
+</table>
