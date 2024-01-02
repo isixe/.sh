@@ -23,7 +23,7 @@ docker run -d \
  -e CLI_ARGS= \
  -v ./config:/config \
  -v ./backups:/backups \
- -v $root:/source \
+ -v /$root:/source \
  -p 8200:8200 \
  --restart unless-stopped \
  linuxserver/duplicati:latest
