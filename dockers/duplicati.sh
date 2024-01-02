@@ -2,15 +2,14 @@
 
 # set volume path
 read -p "Set docker volume path (default /data/docker)：" -i "/data/docker" volumePath
-if [[ -z "$volumePath" ]]; then
-   echo "-> No volume path provided, using default /data/docker"
-   volumePath="/data/docker"
-fi
+volumePath="${volumePath:-/data/docker}"
+echo "-> volume: $volumePath"
 
 # volume path prapare
 mkdir -p $volumePath
 cd $volumePath
 root=$(echo $volumePath | awk -F '/' '{print $2}')
+echo "-> root: /$root"
 
 docker run \
  --name=duplicati \
