@@ -26,6 +26,6 @@ docker run \
  -v $root:/source \
  -p 8200:8200 \
  --restart unless-stopped \
- lscr.io/linuxserver/duplicati:latest
+ linuxserver/duplicati:latest
 
 docker ps
