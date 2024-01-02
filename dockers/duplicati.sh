@@ -15,9 +15,8 @@ cd $volumePath/duplicati
 root=$(echo $volumePath | awk -F '/' '{print $2}')
 echo "-> root: /$root"
 
-docker run \
+docker run -d \
  --name=duplicati \
- -d
  -e PUID=0 \
  -e PGID=0 \
  -e TZ=Asia/Shanghai \
